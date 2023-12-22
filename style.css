@@ -1,0 +1,87 @@
+body{
+	font-family: inter,sans-serif;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #0B0A13;
+}
+
+P{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+section{
+	display: flex;
+	flex: 1 1;
+}
+
+.left-section{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 250px;
+	background-color: #131120;
+	padding: 0 3.5rem 1.125rem 2rem;
+	border-radius: 8px 0px 0px 8px;
+}
+.title{
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: white;
+	margin-bottom: 0.75rem;
+}
+
+.title span{
+	color: #9930EB;
+}
+
+.description{
+	font-size: 0.625rem;
+	color: gray;
+	margin-bottom: 2.125rem;
+}
+
+.about{
+	width: 300px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.stats{
+	font-size: 1.125rem;
+	font-weight: 700;
+	color: white;
+	margin-bottom: 0.25rem;
+}
+
+.sector{
+	font-size: 0.5rem;
+	color: #BCBABE;
+}
+
+.thumbnail{
+	width: 300px;
+	position: relative;
+}
+
+.thumbnail::after{
+	position: absolute;
+	content: "";
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: #4E1A78;
+	border-radius: 0px 8px 8px 0px;
+	opacity: 0.7;
+	z-index: 100;
+}
+
+.thumbnail img{
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 0px 8px 8px 0px;
+}
